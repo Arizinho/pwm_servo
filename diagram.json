@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "Ariagildo Lins",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-pi-pico", "id": "pico", "top": -12.75, "left": -6, "attrs": { "builder": "pico-sdk" } },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -2.8,
+      "left": -237.2,
+      "rotate": 180,
+      "attrs": {}
+    },
+    { "type": "wokwi-vcc", "id": "vcc1", "top": -8.84, "left": -57.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "vcc1:VCC", "servo1:V+", "red", [ "v0" ] ],
+    [ "servo1:PWM", "pico:GP13", "green", [ "h38.4", "v105.4" ] ],
+    [ "servo1:GND", "pico:GND.2", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
