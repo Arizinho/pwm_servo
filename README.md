@@ -25,5 +25,5 @@ Os pinos GPIO da Raspberry Pi Pico estão configurados conforme a tabela abaixo:
 
 Link do vídeo:
 
-[Inserir link do vídeo aqui]
+
 
