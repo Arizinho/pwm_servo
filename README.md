@@ -15,9 +15,9 @@ Os pinos GPIO da Raspberry Pi Pico estão configurados conforme a tabela abaixo:
 
 ## **Funcionamento do Código**
 
-1. **Inicialização do PWM**: O GPIO 22 é configurado para funcionar como saída PWM, com divisor de clock e valores de wrap adequados para gerar um sinal de controle com frência de 50 Hz.
+1. **Inicialização do PWM**: O GPIO 22 é configurado para funcionar como saída PWM, com divisor de clock e valores de wrap para gerar um sinal com frência de 50 Hz.
 2. **Movimento Inicial**: O servo motor é movido para 90°, depois para 180° e, por fim, para 0°, com intervalos de 5 segundos entre cada movimento.
-3. **Movimento Contínuo**: O servo oscila continuamente entre as posições de 0° e 180°, aumentando ou diminuindo a largura do pulso PWM gradativamente a cada 10 ms.
+3. **Movimento Contínuo**: O servo oscila continuamente entre as posições de 0° a 180°, aumentando/diminuindo o duty cycle do PWM a cada 10 ms.
 
 ---
 
